@@ -1,0 +1,130 @@
+<!-- Exercise 4-1:
+1. Create a file `forms.html`.
+2. Add a heading **"User Registration Form"**.
+3. Include inputs for:
+    - Name (text)
+    - Email (email, required)
+    - Password (password)
+    - Date of Birth (date)
+    - Profile Picture Upload (file)
+4. Add a **Submit** button.
+5. Test the form in your browser and try leaving required fields empty. -->
+
+<!-- Exercise 4-2:
+1. In the same file, below the registration form, create a **"User Preferences"** form.
+2. Add:
+    - A `<textarea>` for "About Me" (4 rows, 40 cols).
+    - A `<select>` menu for "Country" with at least 3 `<option>` values.
+    - A `<fieldset>` grouping **Contact Preference** options with two radio buttons: Email and Phone.
+3. Make sure each input is linked to a `<label>`. -->
+
+<!-- Exercise 4-3:
+
+1. Create a form with:
+    - `action="https://example.com/submit"`
+    - `method="POST"`
+    - `target="_blank"`
+    - `autocomplete="off"`
+2. Inside, add an email field (required) and a submit button.
+3. Try changing `method` from `POST` to `GET` and see the difference in the URL. -->
+
+<!-- Exercise 4-4:
+1. Create a **"Survey Form"** with:
+    - Username (text, max length 10, required)
+    - Age (number, min 18, max 60)
+    - Favorite Programming Language (text with `datalist` of HTML, CSS, JavaScript, Python)
+2. Test validation by entering invalid values. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- Exercise 4-1 -->
+    <h2>User Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="profilePic">Profile Picture:</label>
+        <input type="file" id="profilePic" name="profilePic"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+    <!-- Exercise 4-2 -->
+    <h2>User Preferences</h2>
+    <form action="#" method="post">
+        <label for="about">About Me:</label><br>
+        <textarea id="about" name="about" rows="4" cols="40"></textarea><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">Jordan</option>
+            <option value="canada">Saudi Arabia</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Contact Preference:</legend>
+            <input type="radio" id="emailPref" name="contactPref" value="email">
+            <label for="emailPref">Email</label><br>
+
+            <input type="radio" id="phonePref" name="contactPref" value="phone">
+            <label for="phonePref">Phone</label><br>
+        </fieldset><br>
+
+        <input type="submit" value="Save Preferences">
+    </form>
+
+    <hr>
+    <!-- Exercise 4-3 -->
+    <!-- https://example.com/submit?email=jkh%40j.com  <method="get">-->
+    <!-- https://example.com/submit <method="post">-->
+    <h2>Contact Form</h2>
+    <form action="https://example.com/submit" method="post" target="_blank" autocomplete="off">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+    <!-- Exercise 4-4 -->
+    <h2>Survey Form</h2>
+    <form action="#" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" maxlength="10" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="60"><br><br>
+
+        <label for="language">Favorite Programming Language:</label>
+        <input list="languages" id="language" name="language">
+        <datalist id="languages">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+            <option value="Java">    
+        </datalist><br><br>
+
+        <input type="submit" value="Submit Survey">
+    </form>
+</body>
+
+</html>

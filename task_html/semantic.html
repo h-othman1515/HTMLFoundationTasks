@@ -1,0 +1,128 @@
+<!-- Exercise 5-3:
+1. Create a file `semantic.html`.
+2. Structure a mock **personal blog** page using:
+    - `<header>` with a site title
+    - `<nav>` with 3 links (Home, Blog, Contact)
+    - `<section>` containing two `<article>`s (each with a heading & paragraph)
+    - `<aside>` with “About Me” text
+    - `<footer>` with copyright info
+3. Compare the same layout using only `<div>` tags and notice how less readable it is. -->
+
+<!-- Exercise 5-4:
+1. Enhance the `semantic.html` file:
+    - Add `aria-label` to your `<nav>` for screen readers.
+    - Add `alt` text to any images.
+    - Ensure headings follow a proper hierarchy (`<h1>`, `<h2>`, `<h3>`).
+2. Run your page through an **online accessibility checker** and fix any issues. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic</title>
+</head>
+
+<body>
+    <!-- Exercise 5-3 -->
+    <h1><mark>Semantic Version</mark></h1>
+    <header>
+        <h1>My Personal Blog</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a> | <a href="#">Blog</a> | <a href="#">Contact</a>
+    </nav>
+    <section>
+        <article>
+            <h2>Getting Started with Web Development</h2>
+            <p>Web development is an exciting journey that combines creativity with technical skills. Whether you're
+                interested in frontend design or backend programming, there are endless opportunities to learn and grow.
+                Starting with HTML, CSS, and JavaScript gives you a solid foundation to build amazing websites and
+                applications.</p>
+        </article>
+        <article>
+            <h2>The Importance of Accessibility in Web Design</h2>
+            <p>Creating accessible websites ensures that everyone, including people with disabilities, can navigate and
+                use your site effectively. By using semantic HTML, proper alt text for images, and keyboard navigation,
+                you make your content available to a wider audience. Accessibility isn't just a feature—it's a
+                responsibility we all share as web developers.</p>
+        </article>
+    </section>
+    <aside>
+        <h3>About Me</h3>
+        <p>Hi! I'm Hanan Othman, a passionate web developer and coding enthusiast. I love creating beautiful and
+            accessible websites that provide excellent user experiences. When I'm not coding, you'll find me swimming or
+            exploring new web technologies. I'm dedicated to sharing knowledge and helping others learn web development
+            through practical examples and real-world projects.</p>
+    </aside>
+    <footer>
+        &copy; 2026 My Personal Blog. All rights reserved.
+    </footer>
+
+    <hr>
+    <!-- Non-semantic version using divs -->
+    <h1><mark>Non-Semantic Version (Using Divs)</mark></h1>
+    <div class="header">
+        <h1>My Personal Blog</h1>
+    </div>
+    <div class="nav">
+        <a href="#">Home</a> | <a href="#">Blog</a> | <a href="#">Contact</a>
+    </div>
+    <div class="content">
+        <div class="article">
+            <h2>Getting Started with Web Development</h2>
+            <p>Web development is an exciting journey that combines creativity with technical skills. Whether you're
+                interested in frontend design or backend programming, there are endless opportunities to learn and grow.
+                Starting with HTML, CSS, and JavaScript gives you a solid foundation to build amazing websites and
+                applications.</p>
+        </div>
+        <div class="article">
+            <h2>The Importance of Accessibility in Web Design</h2>
+            <p>Creating accessible websites ensures that everyone, including people with disabilities, can navigate and
+                use your site effectively. By using semantic HTML, proper alt text for images, and keyboard navigation,
+                you make your content available to a wider audience. Accessibility isn't just a feature—it's a
+                responsibility we all share as web developers.</p>
+        </div>
+    </div>
+    <div class="aside">
+        <h3>About Me</h3>
+        <p>Hi! I'm Hanan Othman, a passionate web developer and coding enthusiast. I love creating beautiful and
+            accessible websites that provide excellent user experiences. When I'm not coding, you'll find me swimming or
+            exploring new web technologies. I'm dedicated to sharing knowledge and helping others learn web development
+            through practical examples and real-world projects.</p>
+    </div>
+    <div class="footer">
+        &copy; 2026 My Personal Blog. All rights reserved.
+    </div>
+
+    <hr>
+    <!-- Exercise 5-4 -->
+    <!-- 1.Add aria-label to nav -->
+    <nav aria-label="Main Navigation">
+        <a href="#">Home</a> | <a href="#">Blog</a> | <a href="#">Contact</a>
+    </nav>
+
+    <!-- 2.Add alt text to images -->
+    <img src="C:\Users\user\Desktop\task_html\images\profile.jpg" width="250" alt="Profile picture of Hanan Othman">
+
+    <!-- 3.Ensure proper heading hierarchy -->
+    <h1>My Personal Blog</h1>
+    <h2>Getting Started with Web Development</h2>
+    <h3>Building Your First Website with HTML, CSS, and JavaScript</h3>
+    <p>Web development is an exciting journey that combines creativity with technical skills. Whether you're
+        interested in frontend design or backend programming, there are endless opportunities to learn and grow.
+        Starting with HTML, CSS, and JavaScript gives you a solid foundation to build amazing websites and
+        applications.</p>
+    <h2>The Importance of Accessibility in Web Design</h2>
+    <h3>Making the Web Inclusive for Everyone</h3>
+    <p>Creating accessible websites ensures that everyone, including people with disabilities, can navigate and
+        use your site effectively. By using semantic HTML, proper alt text for images, and keyboard navigation,
+        you make your content available to a wider audience. Accessibility isn't just a feature—it's a
+        responsibility we all share as web developers.</p>
+
+        
+
+</body>
+
+</html>

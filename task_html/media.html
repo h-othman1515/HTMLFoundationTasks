@@ -1,0 +1,81 @@
+<!-- Exercise 3-1:
+
+1. Create a new file `media.html`.
+2. Add an `<h2>` heading called **"My Favorite Song"**.
+3. Insert an `<audio>` element:
+    - Add `controls` so users can play/pause.
+    - Add `autoplay` and `muted` attributes so it starts muted.
+    - Use a `.mp3` file of your choice (can be a placeholder file name).
+4. Add a second `<audio>` element with `loop` so it repeats forever.
+5. Test how `preload="none"`, `preload="metadata"`, and `preload="auto"` behave. -->
+
+<!-- Exercise 3-2:
+1. Below the audio section, add an `<h2>` heading **"My Favorite Video"**.
+2. Insert a `<video>` element:
+    - Set `width` to 400px and `controls` so users can play/pause.
+    - Add a `poster` image that shows before playback.
+    - Use a `.mp4` file of your choice.
+3. Duplicate the video element but add `autoplay muted loop` attributes to create a **background-style looping video**. -->
+
+<!-- Exercise 3-3:
+1. Below your video section, add an `<h2>` heading **"Embedded Content"**.
+2. Embed a **YouTube video** using `<iframe>`:
+    - Use `width="560"` and `height="315"`.
+    - Add `title` for accessibility.
+3. Embed **Google Maps** pointing to your favorite location.
+4. Change the `width` and `height` to see how resizing affects the iframe. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+
+<body>
+    <h2>My Favorite Song</h2>
+    <audio controls autoplay muted>
+        <source src="C:\Users\user\Desktop\task_html\audio\d4vd_Remember_Me.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <!-- background music -->
+    <audio controls autoplay loop preload="auto">
+        <source src="C:\Users\user\Desktop\task_html\audio\ToYou2000YearsFromNow.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <h2>My Favorite Video</h2>
+    <video width="1000" controls poster="C:\Users\user\Desktop\task_html\images\quran.png">
+        <source src="C:\Users\user\Desktop\task_html\videos\Quran.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <br><br>
+
+    <video width="1000" controls autoplay muted loop preload="auto">
+        <source src="C:\Users\user\Desktop\task_html\videos\Quran.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <hr>
+    <h2>Embedded Content</h2>
+    <iframe width="1000" height="512" src="https://www.youtube-nocookie.com/embed/QF3Fw_-rktU?si=E4nTbV2MoSqzZHzS"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </iframe>
+    <br><br>
+    <hr>
+    <h2>My Favorite Location</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d950648.0444961815!2d38.551597710253816!3d21.450109759254406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b118db!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sjo!4v1771933389428!5m2!1sen!2sjo"
+        width="1000" height="512" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+
+</html>

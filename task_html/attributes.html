@@ -1,0 +1,54 @@
+<!-- Exercise 5-1:
+1. Create a file `attributes.html`.
+2. Add:
+    - A link (`<a>`) to [**https://example.com**](https://example.com/) that opens in a new tab.
+    - An image (`<img>`) with `src` pointing to a sample image, custom `width` & `height`, and an `alt` description.
+3. Experiment by changing `width` and `height` values and observe the difference.
+4. Try removing `alt` text and then inspect the page with a screen reader or “inspect element” to see the accessibility issue. -->
+
+<!-- Exercise 5-2:
+1. On the same page, add:
+    - A `<div>` with background color and some text.
+    - A `<span>` inside a paragraph with a different text color.
+2. Test adding multiple `<div>`s vs `<span>`s and observe how they stack or flow.
+3. Challenge: Style a sentence so that **only one word** is red and bold without breaking the flow of text. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+</head>
+
+<body>
+    <!-- Exercise 5-1 -->
+    <h2>Attributes Exercise</h2>
+    <a href="https://youtube.com" target="_blank">Visit YouTube.com</a><br><br>
+    <img src="C:\Users\user\Desktop\task_html\images\IceCream_box.jpg" width="auto" height="512" alt="Ice Cream Image">
+
+    <hr>
+    <!-- Exercise 5-2 -->
+    <h2>Div and Span Exercise</h2>
+    <div style="background-color: lightblue; padding: 10px;">
+        This is a div with a light blue background.
+    </div>
+    <p>This is a paragraph with a <span style="color: red;">span red</span> word.</p>
+    <p>This sentence has a <span style="color: red; font-weight: bold;">span red and bold</span> word.</p>
+    <div style="background-color: lightgreen; padding: 10px;">
+        This is another div with a light green background.
+    </div>
+    <p>This is a paragraph with a <span style="color: blue;">span blue</span> word.</p>
+    <span style="color: green;">This is a standalone span with green text.</span>
+    <div style="background-color: lightcoral; padding: 10px;">
+        This is a third div with a light coral background.
+        <span style="color: purple;">This span is inside the div and has purple text.</span>
+    </div>
+
+    <hr>
+    
+
+</body>
+
+</html>
