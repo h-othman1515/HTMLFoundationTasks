@@ -1,1 +1,34 @@
 # HTMLFoundationTasks
+## Course Outline
+- 📘 **Module 1: Introduction To HTML**
+    - **1.1** HTML Structure
+    - **1.2** HTML Elements / Attributes
+    - **1.3** HTML Headings
+    - **1.4** HTML Paragraphs
+    - **1.5** HTML Text Formatting
+    - **1.6** HTML Inline & Block Elements
+- **📙 Module 2: HTML5 Tags & Elements**
+    - **2.1**  Meta tags (title, links, favicon)
+    - **2.2** HTML Comments
+    - **2.3** Formatting Tags: Bold, Italic, Marked, Emphasized, Small, Deleted, Inserted, Subscript, Superscript
+    - **2.4** Structural Tags: Horizontal line, Preformatted text
+- **📗 Module 3: Media and Embedded Content**
+    - **3.1** Audio element and attributes (autoplay, muted, etc.)
+    - **3.2** Video element and controls
+    - **3.3** Embedding external content using iframe
+- **📕 Module 4: HTML5 Forms & User Input**
+    - **4.1** Input types: text, radio, checkbox, password, number, date, email, file, etc.
+    - **4.2** Form elements: label, select, textarea, button, fieldset, legend, datalist, option, optgroup
+    - **4.3** Form attributes: action, method, target, autocomplete
+    - **4.4** Input attributes: value, readonly, disabled, size, maxlength, min, max, multiple, placeholder, required
+- **📘 Module 5: HTML5 Attributes, Block/Inline, and Semantics**
+    - **5.1** Common attributes: href, src, width, height
+    - **5.2** Block vs Inline elements (div, span)
+    - **5.3** Semantic HTML: header, nav, section, article, aside, footer
+    - **5.4** Accessibility and readability with semantic tags
+- **📗 Module 6: Introduction to SEO (Search Engine Optimization)**
+    - **6.1** What is SEO and why it matters for websites
+    - **6.2** Role of HTML in improving search engine ranking
+    - **6.3** How to optimize HTML elements (title, headings, alt text, etc.)
+    - **6.4** Meta tags and their impact on SEO
+    - **6.5** Structured data and improving search visibility
